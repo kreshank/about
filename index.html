@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ Your Name }} – Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <!-- ——— Header / Nav ——— -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#hero" class="logo">
+        <img src="images/logo.svg" alt="Logo"/>
+      </a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/resume.pdf" class="button" target="_blank">Resume</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ——— Hero Section ——— -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <h1>{{ Your Name }}</h1>
+      <p class="tagline">{{ A one‑line tagline about you }}</p>
+      <a href="#projects" class="button">See My Work</a>
+    </div>
+  </section>
+
+  <!-- ——— About Section ——— -->
+  <section id="about" class="about">
+    <div class="container about-content">
+      <img src="images/profile.jpg" alt="Profile photo" class="profile-pic"/>
+      <div>
+        <h2>About Me</h2>
+        <p>{{ A brief bio. Talk about your background, skills, interests in web3… }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ——— Projects Section ——— -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <!-- Repeat this .project-card for each project -->
+        <div class="project-card">
+          <img src="images/project1.png" alt="Project 1 screenshot"/>
+          <h3>Project One</h3>
+          <p>{{ Short description }}</p>
+          <a href="#" class="button">View Demo</a>
+        </div>
+        <div class="project-card">
+          <img src="images/project2.png" alt="Project 2 screenshot"/>
+          <h3>Project Two</h3>
+          <p>{{ Short description }}</p>
+          <a href="#" class="button">View Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ——— Contact Section ——— -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <form action="https://formspree.io/f/your‑form‑id" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <textarea name="message" rows="5" placeholder="Your Message…" required></textarea>
+        <button type="submit" class="button">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ——— Footer ——— -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© {{ new Date().getFullYear() }} {{ Your Name }}. All rights reserved.</p>
+      <div class="social">
+        <a href="https://github.com/username" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/username" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
