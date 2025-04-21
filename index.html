@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>{{ Your Name }} – Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Instrument Sans' rel='stylesheet'>
+  <title>rw</title>
   <link rel="stylesheet" href="css/style.css"/>
   <script defer src="js/main.js"></script>
 </head>
@@ -27,8 +28,13 @@
   <!-- ——— Hero Section ——— -->
   <section id="hero" class="hero">
     <div class="container hero-content">
-      <h1>{{ Your Name }}</h1>
-      <p class="tagline">{{ A one‑line tagline about you }}</p>
+      <h1>Ryan Wu</h1>
+      <h2>Software Engineer</h2>
+      <p class="tagline"><strong>Hi!</strong> I'm a backend infrastructure and 
+        ML-focused software engineer, committed to building efficient and scalable 
+        applications. I've worked on B2B applications, API design and implementation, 
+        Web3 apps, and financial apps. 
+      </p>
       <a href="#projects" class="button">See My Work</a>
     </div>
   </section>
@@ -39,7 +45,15 @@
       <img src="images/profile.jpg" alt="Profile photo" class="profile-pic"/>
       <div>
         <h2>About Me</h2>
-        <p>{{ A brief bio. Talk about your background, skills, interests in web3… }}</p>
+        <p>I'm mostly a <strong>backend developer</strong> who is familiar with 
+          concurrency-friendly system architecture and creating performant systems. 
+          I've worked with <strong>C++, C, Python, PyTorch, Node.js, 
+            React, MySQL, Solidity, etc.</strong></p>
+        <br>
+        <p> I've worked on both Web2 and Web3 projects, despite worked on improving
+          old infrastructure in the past, I'm always eager to explore new technologies
+          and designs that can improve performance and security -- particularly in 
+          workflows where milliseconds make a world of difference.</p>
       </div>
     </div>
   </section>
@@ -48,20 +62,21 @@
   <section id="projects" class="projects">
     <div class="container">
       <h2>Projects</h2>
-      <div class="project-grid">
-        <!-- Repeat this .project-card for each project -->
-        <div class="project-card">
-          <img src="images/project1.png" alt="Project 1 screenshot"/>
-          <h3>Project One</h3>
-          <p>{{ Short description }}</p>
-          <a href="#" class="button">View Demo</a>
-        </div>
-        <div class="project-card">
-          <img src="images/project2.png" alt="Project 2 screenshot"/>
-          <h3>Project Two</h3>
-          <p>{{ Short description }}</p>
-          <a href="#" class="button">View Code</a>
-        </div>
+      <!-- we’ll target this empty grid -->
+      <div class="project-grid" id="projectGrid"></div>
+    </div>
+  </section>
+  
+  <!-- ——— Experience Section ——— -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <!-- we’ll target this empty grid -->
+      <div class="experience-table" id="experienceTable">
+        <p>Job 1</p> <br>
+        <p>Job 2</p> <br>
+        <p>Job 3</p> <br>
+        <p>Job 4</p> <br>
       </div>
     </div>
   </section>
@@ -90,5 +105,13 @@
       </div>
     </div>
   </footer>
+
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
 </body>
 </html>
