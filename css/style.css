@@ -69,25 +69,27 @@ body {
   font-size: 1.5em;
 }
 
-/* Hero */
+/* Hero / Landing */
 .hero {
+  position: relative;
   height: 100vh;
-  background: url('../images/hero-bg.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding-top: 60px;
+  /* darkened blockchain background */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/blockchain.jpg') center/cover no-repeat;
 }
-
 .hero h1 {
   font-size: 3rem;
-  color: #000000;
+  color: #ffffff;
 }
-
 .hero .tagline {
   margin: 1em 0;
-  color: #111111;
+  color: #dddddd;
 }
 
 /* About */
@@ -384,4 +386,8 @@ body {
   .nav-toggle {
     display: block;
   }
+}
+/* force nav resume link to white text */
+.site-header .nav a.button {
+  color: #fff !important;
 }
