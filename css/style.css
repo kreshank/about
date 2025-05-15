@@ -84,12 +84,20 @@ body {
     url('../images/blockchain.jpg') center/cover no-repeat;
 }
 .hero h1 {
+  font-size: 5rem;
+  color: #ffffff;
+}
+.hero h2 {
   font-size: 3rem;
   color: #ffffff;
 }
 .hero .tagline {
   margin: 1em 0;
   color: #dddddd;
+}
+
+h2 { 
+  font-size: 2rem; margin-bottom: 1rem; 
 }
 
 /* About */
@@ -390,4 +398,8 @@ body {
 /* force nav resume link to white text */
 .site-header .nav a.button {
   color: #fff !important;
+}
+
+h2 { 
+  size: 100px;
 }
