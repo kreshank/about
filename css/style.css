@@ -46,11 +46,24 @@ body {
 }
 
 .nav a {
+  position: relative;
   margin: 0 1em;
   text-decoration: none;
   border-color: #000000;
 
   color: var(--primary);
+}
+.nav a:hover,
+.nav a:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* force nav resume link to white text */
+.site-header .nav a.button {
+  color: #fff !important;
 }
 
 .button {
@@ -403,12 +416,4 @@ p {
   .nav-toggle {
     display: block;
   }
-}
-/* force nav resume link to white text */
-.site-header .nav a.button {
-  color: #fff !important;
-}
-
-h2 { 
-  size: 100px;
 }
